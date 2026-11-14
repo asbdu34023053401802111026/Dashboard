@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>EduDash - Education Management</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+
+            <h2 class="logo" style="font-weight: bold;">Edu_Dash</h2>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <a href="index.html" class="login-btn">Home</a>
+                <a href="login.html" class="register-btn">
+                    logout
+                </a>
+        
+            </div>
+
+            <button class="menu-btn" onclick="toggleMenu()">
+                ☰
+            </button>
+
+        </nav>
+    </header>
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>
+                Welcome to EduDash
+            </h1>
+
+            <h2>Smart Education Management System</h2>
+
+            <p>
+                Manage students, teachers, attendance and
+                academic activities easily with EduDash.
+            </p>
+
+            <a href="userindex.html" class="get-started">
+                Get Started
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+            <div class="dashboard-card">
+                <h3>EduDash Dashboard</h3>
+                <div class="stat-box">
+                    <span>Total Students</span>
+                    <h2>2,000</h2>
+                </div>
+                <div class="stat-box">
+                    <span>Teachers</span>
+                    <h2>120</h2>
+                </div>
+                <div class="stat-box">
+                    <span>Attendance</span>
+                    <h2>75%</h2>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="about" id="about">
+
+        <h2>About EduDash</h2>
+
+        <p>
+            EduDash is an education management platform
+            designed to simplify academic activities.
+            It helps manage students, teachers and
+            educational information in one place.
+        </p>
+
+    </section>
+    <section class="features" id="features">
+
+        <h2>Our Features</h2>
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+                <h3>🧑‍🎓Student Management</h3>
+                <p>Manage student details and profiles.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>👩‍🏫Teacher Management</h3>
+                <p>Manage teacher information easily.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3> Dashboard</h3>
+                <p>View important academic information.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📅 Attendance</h3>
+                <p>Track daily student attendance</p>
+            </div>
+
+        </div>
+    </section>
+    <footer id="contact">
+
+        <h2>EduDash</h2>
+
+        <p>Smart Education Management System</p>
+
+        <p>© 2026 EduDash. All Rights Reserved.</p>
+
+    </footer>
+
+    <script >
+        function toggleMenu() {
+
+    let navLinks = document.getElementById("nav-links");
+
+    navLinks.classList.toggle("show");
+
+}
+    </script>
+
+</body>
+</html>
